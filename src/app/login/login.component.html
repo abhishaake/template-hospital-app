@@ -1,0 +1,83 @@
+<br><br><br>
+<div data-ng-init="init()" lass="py-5" style="width: 40%; margin-left: 30%;">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <span class="anchor" id="formLogin"></span>
+  
+        <!-- form card login -->
+        <div class="card rounded-0">
+          <div class="card-header">
+            <h3 class="mb-0">Login</h3>
+          </div>
+          <div class="card-body">
+            <form  class="form">
+              <div class="form-group">
+                <label for="role">Role</label>
+                <select name="role" class="form-control rounded-1" required placeholder="Select a user role" [(ngModel)]="role" (ngModelChange)="changeUser()">
+                  <option value="admin">Admin</option>
+                  <option value="doctor">Doctor</option>
+                  <option value="patientdetails">Patient</option>
+                </select>
+              </div>
+              <div class="form-group mt-3" >
+                <label for="hospitalName">Hospital</label>
+                <select name="hospital" class="form-control rounded-1" required placeholder="Select a hospital you belong">
+                  <option value="1">Hospital 1</option>
+                  <option value="2">Hospital 2</option>
+                  <option value="3">Hospital 3</option>
+                </select>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Username</label>
+                <input type="text" name="username" class="form-control rounded-1" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control rounded-1" required>
+              </div>
+              <div *ngIf="false">
+                <p class="alert alert alert-danger"></p>
+              </div>
+              <ng-container >
+                <div *ngIf="false">
+                  <p class="alert alert alert-danger">Please change the temporary password immediately.</p>
+                </div>
+                <button type="button" class="btn btn-success float-right mt-2" style="margin-right: 10px;">
+                  Create new password
+                </button>
+              </ng-container>
+              <button type="button" class="btn btn-success float-right mt-2" (click)="login()"
+                      >
+                Login
+              </button>
+            </form>
+          </div>
+          <!--/card-block-->
+        </div>
+        <!-- /form card login -->
+      </div>
+    </div>
+  </div>
+  
+  <ng-template  let-close="close" let-dismiss="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">
+        <i class="fa fa-key mr-2"></i>Password
+      </h4>
+      <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">x</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Enter new password for authentication</p>
+      <div class="form-group">
+        <input type="password" name="password" class="form-control rounded-1" required >
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" id="patientPwd" class="btn btn-danger" >
+        Confirm password and login
+      </button>
+      <button type="button" class="btn btn-outline-dark" >Cancel</button>
+    </div>
+  </ng-template>

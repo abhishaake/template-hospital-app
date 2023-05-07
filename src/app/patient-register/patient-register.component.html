@@ -1,0 +1,111 @@
+<nav>
+    <ul style="margin-left: auto; margin-right: 2px;" class="menu">
+      <li >
+        <a routerLink="/admin" routerLinkActive="active" class="activeItem">Patients</a>
+      </li>
+      <li >
+        <a routerLink="/doctorregister" routerLinkActive="active" class="activeItem">Create Doctor</a>
+      </li>
+      <li >
+        <a routerLink="/patientregister" routerLinkActive="active" class="activeItem">Create Patient</a>
+      </li>
+    </ul>
+  </nav>   
+  <br>
+  
+  <div style="width: 50%; margin-left: 15%;" class="sidebar-layout-bottom-row p-3 container-fluid">
+    <div class="row">
+      <div class="offset-xl-3 col-xl-6 col-sm-8">
+        <div class="card">
+          <div class="card-body">
+            <p style="font-weight: bolder;">Please fill out patient details. All fields are required.</p>
+            <form class="form-horizontal form-standard" >
+              <fieldset class="mb-3">
+                <ng-container >
+                  <div class="form-group">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" name="firstName" formControlName="firstName"
+                      placeholder="Enter your first name.">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" name="firstName" formControlName="lastName"
+                      placeholder="Enter your first name.">
+                  </div>
+                  <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea class="form-control" name="address" formControlName="address"
+                      placeholder="Enter your address."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" name="age" formControlName="age"
+                      placeholder="Enter your age.">
+                  </div>
+                  <div class="form-group">
+                    <label for="bloodGroup">Blood group</label>
+                    <input type="number" class="form-control" name="age" formControlName="age"
+                      placeholder="Enter your Blood Group.">
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumber">Contact number</label>
+                    <input type="text" class="form-control" name="phoneNumber" formControlName="phoneNumber"
+                      placeholder="Enter your contact number.">
+                  </div>
+                  <div class="form-group">
+                    <label for="emergPhoneNumber">Emergency contact number</label>
+                    <input type="text" class="form-control" name="emergPhoneNumber" formControlName="emergPhoneNumber"
+                      placeholder="Enter your emergency contact number.">
+                  </div>
+                </ng-container>
+                <ng-container>
+                  <div class="form-group">
+                    <label for="allergies">Allergies</label>
+                    <input type="text" class="form-control" name="allergies" formControlName="allergies"
+                           placeholder="Does patient has any allergies?">
+                  </div>
+                  <div class="form-group">
+                    <label for="symptoms">Symptoms</label>
+                    <input type="text" class="form-control" name="symptoms" formControlName="symptoms"
+                           placeholder="Enter patient's symptoms.">
+                  </div>
+                  <div class="form-group">
+                    <label for="diagnosis">Diagnosis</label>
+                    <input type="text" class="form-control" name="diagnosis" formControlName="diagnosis"
+                           placeholder="What do you find in diagnosis?">
+                  </div>
+                  <div class="form-group">
+                    <label for="treatment">Treatment</label>
+                    <input type="text" class="form-control" name="treatment" formControlName="treatment"
+                           placeholder="What treatment will you suggest?">
+                  </div>
+                  <div class="form-group">
+                    <label for="followUp">Follow Up Duration</label>
+                    <input type="text" class="form-control" name="followUp" formControlName="followUp"
+                           placeholder="Enter follow up duration.">
+                  </div>
+                </ng-container>
+                <div *ngIf="false">
+                  <p class="alert alert-success">New patient's credentials: newPatientData.id - newPatientData.password</p>
+                </div>
+                <div class="form-group form-buttons">
+                  <ng-container >
+                    <button style="margin-top: 10px; margin-right: 10px;" class="btn btn-primary mr-2" type="submit" >Save</button>
+                    <a style="margin-top: 10px;"
+                      class="btn btn-secondary">
+                      Cancel
+                    </a>
+                  </ng-container>
+                    <!--<button class="btn btn-danger" type="button" (click)="findInvalidControls()">TEST</button>-->
+                </div>
+                <div *ngIf="false">
+                  <p class="alert alert-danger">error.message</p>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

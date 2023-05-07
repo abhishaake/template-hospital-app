@@ -1,0 +1,82 @@
+<nav>
+    <ul style="margin-left: auto; margin-right: 2px;" class="menu">
+      <li >
+        <a routerLink="/doctordetails" routerLinkActive="active" class="activeItem">View Doctor</a>
+      </li>
+      <li>
+        <a routerLink="/patientdetails" routerLinkActive="active" class="activeItem">My Details</a>
+      </li>
+    </ul>
+  </nav> 
+  <br><br><br>
+  
+  <div style="width: 35%; margin-left:30% ;" class="sidebar-layout-bottom-row p-3 container-fluid">
+    <div class="row">
+      <div class="col-xl-6 col-sm-12">
+        <div class="card" style="background-color: beige;">
+          <div class="card-body">
+            <h5 class="card-title">Details</h5>
+            <table >
+                <tr>
+                  <td style="width: 100%;" class="labels"><strong>Patient ID</strong></td>
+                  <td>patientId</td>
+                </tr>
+                <tr>
+                  <td class="labels"><strong>First Name</strong></td>
+                  <td>firstName</td>
+                </tr>
+                <tr>
+                  <td class="labels"><strong>Last Name</strong></td>
+                  <td>lastName</td>
+                </tr>
+                <tr>
+                  <td class="labels"><strong>Age</strong></td>
+                  <td>age</td>
+                </tr>
+                <ng-container >
+                  <tr>
+                    <td class="labels"><strong>Contact number</strong></td>
+                    <td>phoneNumber</td>
+                  </tr>
+                  <tr>
+                    <td class="labels"><strong>Emergency number</strong></td>
+                    <td>emergPhoneNumber</td>
+                  </tr>
+                  <tr>
+                    <td class="labels"><strong>Address</strong></td>
+                    <td>address</td>
+                  </tr>
+                </ng-container>
+                <tr>
+                  <td class="labels"><strong>Blood Group</strong></td>
+                  <td>bloodGroup</td>
+                </tr>
+                <tr>
+                  <td class="labels"><strong>Allergies</strong></td>
+                  <td>allergies</td>
+                </tr>
+                <tr>
+                  <td class="labels"><strong>Symptoms</strong></td>
+                  <td>symptoms</td>
+                </tr>
+                <tr>
+                  <td class="labels"><strong>Diagnosis</strong></td>
+                  <td>diagnosis</td>
+                </tr>
+                <tr>
+                  <td class="labels"><strong>Treatment</strong></td>
+                  <td>treatment</td>
+                </tr>
+                <tr>
+                  <td class="labels"><strong>Follow up period</strong></td>
+                  <td>followUp</td>
+                </tr>
+            </table>
+            <div *ngIf="false">
+              <p>You are not authorized to view patient details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

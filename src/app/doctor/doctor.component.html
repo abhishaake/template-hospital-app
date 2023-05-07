@@ -1,0 +1,51 @@
+<nav>
+  <ul style="margin-left: auto; margin-right: 2px;" class="menu">
+    
+    <li >
+      <a routerLink="/doctor" routerLinkActive="active" class="activeItem">My Details</a>
+    </li>
+    <li>
+      <a routerLink="/patient" routerLinkActive="active" class="activeItem">View patients</a>
+    </li>
+  </ul>
+</nav>    
+  <br>
+  
+  <div style="width: 40%; margin-left: 30%;" class="sidebar-layout-bottom-row p-3 container-fluid">
+    <div class="row">
+      <div class="col-xl-6 col-sm-12">
+        <div class="card">
+          <div class="card-body" style="background-color: azure;">
+            <h5 class="card-title">Details</h5>
+            <table >
+                <br>
+                <tr>
+                  <td class="labels" style="width: 80%; "><strong>Doctor ID</strong></td>
+                  <td style="align-items: center; align-content: center;width: 100%;">1234</td>
+                </tr>
+                <br>
+                
+                <tr>
+                  <td class="labels"><strong>First Name</strong></td>
+                  <td>Michael</td>
+                </tr>
+                <br>
+                <tr>
+                  <td class="labels"><strong>Last Name</strong></td>
+                  <td>Jackson</td>
+                </tr>
+                <br>
+                <tr>
+                  <td class="labels"><strong>Speciality</strong></td>
+                  <td>Skin Specialist</td>
+                </tr>
+                <br>
+            </table>
+            <div >
+              <p *ngIf="false">You are not authorized to view doctor details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

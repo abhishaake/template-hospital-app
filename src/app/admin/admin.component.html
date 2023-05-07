@@ -1,0 +1,67 @@
+<nav>
+  <ul style="margin-left: auto; margin-right: 2px;" class="menu">
+    <li >
+      <a routerLink="/admin" routerLinkActive="active" class="activeItem">Patients</a>
+    </li>
+    <li >
+      <a routerLink="/doctorregister" routerLinkActive="active" class="activeItem">Create Doctor</a>
+    </li>
+    <li >
+      <a routerLink="/patientregister" routerLinkActive="active" class="activeItem">Create Patient</a>
+    </li>
+  </ul>
+</nav>    
+  <br><br><br>
+  
+  <div style="width: 60%;" class="sidebar-layout-bottom-row p-3 container-fluid">
+    <p>List of all patients.</p>
+    <div class="table-responsive">
+      <table class="table table-hover" >
+        <thead class="thead-light">
+          <tr>
+            <th  scope="col">
+                Hospital Name
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--<tr *ngFor="let singleRecord of patientRecords">
+            <td *ngFor="let columnName of headerNames">
+              {{singleRecord[columnName.keyName]}}
+            </td>
+          </tr>-->
+          <tr style="background-color: azure; border-bottom: 4px;border-color: grey;">
+            <td style="font-weight: bolder;">Patient Id</td>
+            <td style="font-weight: bolder;">First Name</td>
+            <td style="font-weight: bolder;">Last Name</td>
+          </tr>
+          <tr >
+            <td>patient1</td>
+            <td>firstName1</td>
+            <td>lastName1</td>
+          </tr>
+          <tr >
+            <td>patient2</td>
+            <td>firstName2</td>
+            <td>lastName2</td>
+          </tr>
+          <tr >
+            <td>patient3</td>
+            <td>firstName3</td>
+            <td>lastName3</td>
+          </tr>
+          <tr >
+            <td>patient4</td>
+            <td>firstName4</td>
+            <td>lastName4</td>
+          </tr>
+          <tr >
+            <td>patient5</td>
+            <td>firstName5</td>
+            <td>lastName5</td>
+          </tr>
+        </tbody>
+      </table>
+      <span>Total count: 5</span>
+    </div>
+  </div>

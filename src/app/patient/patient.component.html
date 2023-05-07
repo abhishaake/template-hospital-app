@@ -1,0 +1,88 @@
+<nav>
+  <ul style="margin-left: auto; margin-right: 2px;" class="menu">
+    <li >
+      <a routerLink="/doctor" routerLinkActive="active" class="activeItem">My Details</a>
+    </li>
+    <li >
+      <a routerLink="/patient" routerLinkActive="active" class="activeItem">View patients</a>
+    </li>
+  </ul>
+</nav>   
+  <br><br><br>
+  
+  <div style="width: 60%; margin-left: 4%;" class="sidebar-layout-bottom-row p-3 container-fluid">
+    <p style="font-weight: bolder;"> History of a patient.</p>
+    <div class="table-responsive-lg">
+      <table class="table table-hover">
+        <thead class="thread-light">
+          <tr>
+            <th scope="col">
+                Details
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--<tr *ngFor="let singleRecord of [patientRecordHistory]">
+            <td style=" border-color: black; border-width: 1px;" *ngFor="let columnName of headerNames">
+              singleRecord[columnName.keyName]
+            </td>
+          </tr>-->
+          <tr >
+            <td style=" border-color: black; border-width: 1px;" style=" border-color: black; border-width: 1px;">Date</td>
+            <td style=" border-color: black; border-width: 1px;" >changedBy</td>
+            <td style=" border-color: black; border-width: 1px;" >firstName</td>
+            <td style=" border-color: black; border-width: 1px;">lastName</td>
+            <td style=" border-color: black; border-width: 1px;">age</td>
+            <td style=" border-color: black; border-width: 1px;">bloodGroup</td>
+            <ng-container >
+              <td style=" border-color: black; border-width: 1px;">address</td>
+              <td style=" border-color: black; border-width: 1px;">phoneNumber</td>
+              <td style=" border-color: black; border-width: 1px;">emergPhoneNumber</td>
+            </ng-container>
+            <td style=" border-color: black; border-width: 1px;">allergies</td>
+            <td style=" border-color: black; border-width: 1px;">diagnosis</td>
+            <td style=" border-color: black; border-width: 1px;">symptoms</td>
+            <td style=" border-color: black; border-width: 1px;">treatment</td>
+            <td style=" border-color: black; border-width: 1px;">followUp</td>
+          </tr>
+          <tr style="background-color: aliceblue;">
+            <td >10/10/10</td>
+            <td >xyz</td>
+            <td >Abhishek</td>
+            <td>K</td>
+            <td>23</td>
+            <td>A+</td>
+            <ng-container >
+              <td>Sikar</td>
+              <td>12345</td>
+              <td>67890</td>
+            </ng-container>
+            <td>allergies 1</td>
+            <td>diagnosis 1</td>
+            <td>symptoms 1</td>
+            <td>treatment 1</td>
+            <td>followUp 1</td>
+          </tr>
+          <tr style="background-color:beige">
+            <td>5/5/20</td>
+            <td >abc</td>
+            <td >Shashank</td>
+            <td>Y</td>
+            <td>22</td>
+            <td>B+</td>
+            <ng-container >
+              <td>Noida</td>
+              <td>54321</td>
+              <td>09876</td>
+            </ng-container>
+            <td>allergies 2</td>
+            <td>diagnosis 2</td>
+            <td>symptoms 2</td>
+            <td>treatment 2</td>
+            <td>followUp 2</td>
+          </tr>
+        </tbody>
+      </table>
+      <span>Total count: 2</span>
+    </div>
+  </div>

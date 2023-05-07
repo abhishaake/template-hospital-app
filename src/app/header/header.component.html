@@ -1,0 +1,8 @@
+<nav>
+    <div class="logo">Hospital Records</div>
+    <ul class="menu">
+      <li *ngIf="!checklogin()">
+        <a routerLink="/login" routerLinkActive="active" class="activeItem" >Logout</a>
+      </li>
+    </ul>
+  </nav>    

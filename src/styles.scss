@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+ng-select.custom>div {
+    border: 0 !important;
+    outline: none;
+}
+
+ng-select.custom>div>div.single>div.toggle {
+    color: #2ebaee !important;
+}
+
+ng-select.custom>div>div.single>div.placeholder {
+    text-align: center;
+}
